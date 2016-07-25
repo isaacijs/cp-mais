@@ -3,4 +3,4 @@
 > "Organize sua vida!"
 
 - Projeto Iniciado
-  - Entrada e Saida
+  - Entrada e Saida de Valores
