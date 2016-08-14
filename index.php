@@ -28,11 +28,11 @@ require_once './indexControl.php';
             <form id="" class="" method="POST" action="" enctype="multipart/form-data">
                 <div id="" class="">
                     <label for="user_login">Usuário: </label>
-                    <input type="text" name="user_login" id="user_login" placeholder="E-mail/Usuário"/>
+                    <input type="text" name="user_login" id="user_login" placeholder="E-mail/Usuário" required />
                 </div>
                 <div id="" class="">
                     <label for="user_login">Senha: </label>
-                    <input type="password" name="user_password" id="user_password" placeholder="Senha"/>
+                    <input type="password" name="user_password" id="user_password" placeholder="Senha" required />
                 </div>
                 <div id="" class="">
                     <button id="" class="">Fazer Login</button>
