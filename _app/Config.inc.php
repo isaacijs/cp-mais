@@ -3,7 +3,7 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
-define('DBSA', 'quizznarede');
+define('DBSA', 'controlmais');
 
 // DEFINE SERVIDOR DE E-MAIL ################
 define('MAILUSER', 'email@dominio.com.br');

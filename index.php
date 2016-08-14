@@ -1,4 +1,5 @@
 <?php
+/*chama o arquivo em php com funções*/
 require_once './indexControl.php';
 ?>
 <!DOCTYPE html>
@@ -21,29 +22,53 @@ require_once './indexControl.php';
     </head>
 
     <body>
+        <h1>Controle Financeiro familiar MAIS</h1>
         <div id="LoginBox" class="">
+            <h2>Login</h2>
             <form id="" class="" method="POST" action="" enctype="multipart/form-data">
                 <div id="" class="">
-                    <label for="user_login">Usuários: </label>
-                    <input type="text" name="user_login" id="user_login" placeholder="E-mail/Usuários"/>
+                    <label for="user_login">Usuário: </label>
+                    <input type="text" name="user_login" id="user_login" placeholder="E-mail/Usuário"/>
                 </div>
                 <div id="" class="">
                     <label for="user_login">Senha: </label>
-                    <input type="password" name="user_password" id="user_password" placeholder="E-mail/Usuários"/>
+                    <input type="password" name="user_password" id="user_password" placeholder="Senha"/>
                 </div>
                 <div id="" class="">
                     <button id="" class="">Fazer Login</button>
                 </div>
             </form>
+            <a href="#" id="signUp" class="">Criar um registro</a>
         </div>
 
         <div id="LoginBox" class="">
+            <h2>Cadastro</h2>
             <form id="" class="" method="POST" action="" enctype="multipart/form-data">
                 <div id="" class="">
-                    <label for="user_login">Usuários: </label>
-                    <input type="text" name="user_login" id="user_login" placeholder="E-mail/Usuários"/>
+                    <label for="user_name">Nome: </label>
+                    <input type="text" name="user_name" id="user_name" placeholder="Nome" required />
+                </div>
+                <div id="" class="">
+                    <label for="user_name">Login/Usuário: </label>
+                    <input type="text" name="user_login" id="user_login" placeholder="Usuário" required />
+                </div>
+                <div id="" class="">
+                    <label for="user_email">E-mail: </label>
+                    <input type="text" name="user_email" id="user_email" placeholder="E-mail" required />
+                </div>
+                <div id="" class="">
+                    <label for="user_password">Senha: </label>
+                    <input type="password" name="user_password" id="user_password" placeholder="Senha" required />
+                </div>
+                <div id="" class="">
+                    <label for="user_password">Repita a Senha: </label>
+                    <input type="password" name="user_password2" id="user_password" placeholder="Senha" required />
+                </div>
+                <div id="" class="">
+                    <button id="" class="">Fazer Login</button>
                 </div>
             </form>
+            <a href="#" id="signUp" class="">Fazer Login</a>
         </div>
     </body>
 </html>
