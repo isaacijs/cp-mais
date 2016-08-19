@@ -1,0 +1,27 @@
+{
+  "name": "cpmais",
+  "version": "1.0.0",
+  "description": "Controle Financeiro Familiar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suforoso/cp-mais.git"
+  },
+  "author": "Isaac Silvério, Michael Alves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suforoso/cp-mais/issues"
+  },
+  "homepage": "https://github.com/suforoso/cp-mais#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-typescript": "^2.13.6",
+    "run-sequence": "^1.2.2"
+  }
+}
