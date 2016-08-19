@@ -3,7 +3,7 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
-define('DBSA', 'quizznarede');
+define('DBSA', 'controlmais');
 
 // DEFINE SERVIDOR DE E-MAIL ################
 define('MAILUSER', 'email@dominio.com.br');
@@ -11,16 +11,7 @@ define('MAILPASS', 'senhadoemail');
 define('MAILPORT', 'postadeenvio');
 define('MAILHOST', 'servidordeenvio');
 
-// DEFINE IDENTIDADE DO SITE ################
-define('SITENAME', 'Cidade Online');
-define('SITEDESC', 'Este site foi desenvolvido no curso de PHP Orientado a Objetos da UPINSIDE TREINAMENTOS. O mesmo utiliza a arquitetura semântica do HTML5 e foi criado com as últimas técnologias disponíveis!');
-
-// DEFINE A BASE DO SITE ####################
-define('HOME', 'http://dominiocompleto.com.br');
-define('THEME', 'cidadeonline');
-
-define('INCLUDE_PATH', HOME . DIRECTORY_SEPARATOR . 'themes' . DIRECTORY_SEPARATOR . THEME);
-define('REQUIRE_PATH', 'themes' . DIRECTORY_SEPARATOR . THEME);
+setcookie("pag404","http://localhost/cp-mais/?exe=restrito");
 
 // AUTO LOAD DE CLASSES ####################
 function __autoload($Class) {

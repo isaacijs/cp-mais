@@ -25,7 +25,7 @@ class Login {
      * @param ARRAY $UserData = user [email], pass
      */
     public function ExeLogin(array $UserData) {
-        $this->Email = (string) strip_tags(trim($UserData['user_email']));
+        $this->Email = (string) strip_tags(trim($UserData['user_login']));
         $this->Senha = (string) strip_tags(trim($UserData['user_password']));
         $this->setLogin();
     }
@@ -89,7 +89,7 @@ class Login {
             $this->Execute();
             if ($this->Result == true):
                 $lastupdate = new Update;
-            
+
                 date_default_timezone_set('America/Sao_Paulo');
                 $Dados['user_lastupdate'] = date('Y-m-d H:i:s');
                 $lastupdate->ExeUpdate('qr_users', $Dados, 'WHERE user_id = :idUser', "idUser={$_SESSION['userlogin']['user_id']}");
@@ -102,7 +102,11 @@ class Login {
         $this->Senha = base64_encode($this->Senha);
 
         $read = new Read;
-        $read->ExeRead("qr_users", "WHERE user_email = :email AND user_password = :p", "email={$this->Email}&p={$this->Senha}");
+        if (filter_var($this->Email, FILTER_VALIDATE_EMAIL)):
+            $read->ExeRead("ctrl_users", "WHERE user_email = :email AND user_password = :p", "email={$this->Email}&p={$this->Senha}");
+        else:
+            $read->ExeRead("ctrl_users", "WHERE user_login = :email AND user_password = :p", "email={$this->Email}&p={$this->Senha}");
+        endif;
 
         if ($read->getResult()):
             $this->Result = $read->getResult()[0];

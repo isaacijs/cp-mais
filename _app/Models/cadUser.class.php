@@ -13,7 +13,7 @@ class cadUser {
     private $Result;
 
     //Nome da tabela no banco de dados
-    const Entity = 'qr_users';
+    const Entity = 'ctrl_users';
 
     /**
      * <b>Cadastrar Usuário:</b> Envelope os dados de um usuário em um array atribuitivo e execute esse método
