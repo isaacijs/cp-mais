@@ -1,5 +1,5 @@
 <?php
-/*chama o arquivo em php com funções*/
+/*Chama o arquivo em php com funções*/
 require_once './indexControl.php';
 ?>
 <!DOCTYPE html>
