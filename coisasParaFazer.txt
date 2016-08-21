@@ -1,3 +1,0 @@
-- Pessistencia no cadastro caso haja ERRO no cadastro.
-- Verificar, alem do e-mail, a existencia do usuario.
-- Ajustar/formatar as menssagem do Login/Cadastro.
