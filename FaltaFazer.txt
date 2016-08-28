@@ -1,0 +1,5 @@
+- Ajustar as mensagem no cadastro e logim.
+- Pessistencia caso haja ERRO ao fazer cadastro.
+- Formatar as masagem de erros no login/signUp.
+- Verificar ao cadastar, assim como e feito com o email, se o usuario existe(Tentar fazer isso usando JS).
+
